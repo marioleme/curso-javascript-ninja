@@ -49,21 +49,21 @@ function argument(x,y,z) {
     if(x === undefined || y === undefined || z === undefined) { 
     	return "Preencha todos os valores corretamente!"; 
    } 
-  return (x * y * z) + 3 
+  return (x * y * z) + 2 
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-"Preencha todos os valores corretamente!"
+ // "Preencha todos os valores corretamente!"
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-retorna a string "Preencha todos os valores corretamente!"
+// "Preencha todos os valores corretamente!"
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 argument(1,1,1);
 
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-resultado 4
+// resultado 3
 
 /*
 Crie uma função com as seguintes características:
@@ -75,27 +75,28 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 
-// Essa atividade um pouco mais dificil // 
+
 function newArgument(x,y,z) { 
-    if(x === undefined){
-        return false;
-    }else if(y === undefined){
+    if(x !== undefined && y === undefined && z === undefined){
         return x;
-    }else if(z === undefined){
+    }else if(x !== undefined && y !== undefined  && z === undefined){
         return x + y;
     }else if(x !== undefined && y !== undefined && z !== undefined){
         return(x + y)/ z;
-    }else
-        return null;
+    }else if (x === undefined && y === undefined && z === undefined ){
+        return false;
+    }else {
+    	return null;
+    }
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 
 newArgument();
-false
+//false
 newArgument(1);
-1
+//1
 newArgument(1,2);
-3
+//3
 newArgument(1,2,4);
-0.75
+// 0.75
