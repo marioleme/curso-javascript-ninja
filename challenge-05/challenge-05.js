@@ -19,7 +19,7 @@ Crie uma função que receba um array como parâmetro, e retorne esse array.
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-console.log(myFunction(myvar)[1];
+console.log(myFunction(myvar)[1]);
  
  // 4
 
