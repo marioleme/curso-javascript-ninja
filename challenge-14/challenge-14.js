@@ -61,7 +61,7 @@ Envolva todo o código desse desafio em uma IIFE.
     console.log('\nOperation 2:');
     var operation2 = justMod2Or3.reduceRight(function(acumulado, lastItem) {
         return (acumulado + 1) * lastItem;
-    }, 0)
+    }, '')
     console.log(operation2);
 
     /*
@@ -105,7 +105,7 @@ Envolva todo o código desse desafio em uma IIFE.
     o que acontece ;)
     */
     console.log('\nExiste um { number: 2 } em numberObjects?');
-    if (numberObjects.indexOf({ number: 2 }) < -1) {
+    if (numberObjects.indexOf({ number: 2 }) > -1) {
         console.log('Existe um objeto { number: 2 } em numberObjects');
     } else {
         console.log('Existe um objeto { number: 2 } em numberObjects!');
@@ -118,7 +118,7 @@ Envolva todo o código desse desafio em uma IIFE.
     será que obtemos um resultado diferente? Faça a busca a partir do índice 2.
     */
     console.log('\nE buscando a partir do último índice, o { number: 2 } existe?');
-    if (numberObjects.lastIndexOf({ number: 2 }) < -1) {
+    if (numberObjects.lastIndexOf({ number: 2 }, 2) > -1) {
         console.log('Existe um objeto { number: 2 } em numberObjects');
     } else {
         console.log('Existe um objeto { number: 2 } em numberObjects!');
